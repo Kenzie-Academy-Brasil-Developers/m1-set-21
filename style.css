@@ -1,0 +1,60 @@
+/*
+selector(tag, class, id){
+    propriedade: valor;
+}
+
+
+body{
+    background-color: #fcfcfc;
+}
+
+.nome-da-class{
+}
+#nome-do-id{
+}
+*/
+header{
+    background-color: #FF5F8F;
+    height: 91px;
+}
+h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color:#FFFFFF;
+}
+nav{
+    height: 50px;
+    background-color: #525252;
+}
+
+.menu--link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.menu--pesquisa{
+    width: 274px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #A2A2A2;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+button{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: red;
+    width: 84px;
+    height: 19px;
+    background-color: transparent;
+    border: 0px;
+    text-transform: uppercase;
+}
