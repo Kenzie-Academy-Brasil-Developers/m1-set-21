@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Construindo HTML</title>
 </head>
 <body>
@@ -35,38 +38,38 @@
     <main>
         <article>
             <h2>Título da Reportagem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic culpa quae voluptatem corporis error odio, consequuntur fuga possimus voluptatum est? Et odio excepturi repellat soluta incidunt minima vitae in id!</p>
+            <p class="reportagem--texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?</p>
         </article>
         <aside>
             <h3>Notícias das Olimpíadas</h3>
-            <div>
-                <a href="#" title="#">
-                    <img src="#" alt="#"/>
+            <div class="box-reportagem">
+                <img src="assets/report-1.svg" alt="Atleta jovem segurando medalha de prata"/>
+                <a href="#" title="Prata em Tóquio">
                     <h4>Atleta jovem é medalha nas Olimpiadas</h4>
                     <span>17 Agosto 2021</span>
                     <p>Prata em Tóquio aos 13 anos, a Brasileira Rayssa Leal subiu ao pódio</p>
                 </a>
             </div>
-            <div>
-                <img src="#" alt="#"/>
-                <a href="#" title="#">
-                    <h4>Atleta jovem é medalha nas Olimpiadas</h4>
+            <div class="box-reportagem">
+                <img src="assets/report-2.svg" alt="Atleta jovem no pódio com medalha de ouro"/>
+                <a href="#" title="50% das conquistas é feminina em Tóquio">
+                    <h4>50% das conquistas é feminina em Tóquio</h4>
+                    <span>14 Agosto 2021</span>
+                    <p>Rebeca Andrade faturou o ouro no salto. Ela se tornou a primeira brasileira</p>
                 </a>
-                <span>17 Agosto 2021</span>
-                <p>Prata em Tóquio aos 13 anos, a Brasileira Rayssa Leal subiu ao pódio</p>
             </div>
-            <div>
-                <img src="#" alt="#"/>
-                <a href="#" title="#">
-                    <h4>Atleta jovem é medalha nas Olimpiadas</h4>
+            <div class="box-reportagem">
+                <img src="assets/report-3.svg" alt="Atleta no pódio com medalha de prata"/>
+                <a href="#" title="Medalhista no Brasil">
+                    <h4>Medalhista no Brasil</h4>
                     <span>17 Agosto 2021</span>
-                    <p>Prata em Tóquio aos 13 anos, a Brasileira Rayssa Leal subiu ao pódio</p>
+                    <p>Kelvin não pode contar com a treinadora na sua prova. Na grande final ...</p>
                 </a>
             </div>
         </aside>
     </main>
     <footer>
-        <nav>
+        <nav class="menu--rodape">
             <ul>
                 <li>
                     <a href="#" title="#">HOME</a>
@@ -82,7 +85,7 @@
                 </li>
             </ul>
         </nav>
-        <span>Marcação de direitos por Isabella Bertini</span>
+        <p>Marcação de direitos por Isabella Bertini</p>
     </footer>
 </body>
 </html>
