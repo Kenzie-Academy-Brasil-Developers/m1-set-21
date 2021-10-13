@@ -48,6 +48,7 @@ body{
 header{
     background-color: #FF5F8F;
     height: 91px;
+    margin-bottom: 3px;
 }
 h1{
     font-family: 'Roboto', sans-serif;
@@ -55,10 +56,23 @@ h1{
     font-weight: bold;
     font-size: 36px;
     color:#FFFFFF;
+    padding-top: 28px;
+    text-align: center;
 }
 nav{
     height: 50px;
     background-color: #525252;
+    padding: 0 30px;
+}
+
+.menu{}
+.menu--item{
+    float: left;
+    padding: 18px 0;
+}
+.menu--itemPesquisa{
+    float: right;
+    padding: 9px 0;
 }
 
 .menu--link{
@@ -68,6 +82,7 @@ nav{
     font-size: 16px;
     color:#FFFFFF;
     text-decoration: none;
+    padding: 0 30px;
 }
 .menu--pesquisa{
     width: 274px;
@@ -83,13 +98,19 @@ button{
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    color: red;
+    color: #fff;
     width: 84px;
     height: 19px;
     background-color: transparent;
     border: 0px;
     text-transform: uppercase;
+    cursor: pointer;
 }
+
+main{
+    clear: both;
+}
+
 h2{
     font-style: normal;
     font-weight: 300;
