@@ -59,13 +59,12 @@ h1{
     padding-top: 28px;
     text-align: center;
 }
-nav{
+.menu{
     height: 50px;
     background-color: #525252;
     padding: 0 30px;
 }
 
-.menu{}
 .menu--item{
     float: left;
     padding: 18px 0;
@@ -83,6 +82,9 @@ nav{
     color:#FFFFFF;
     text-decoration: none;
     padding: 0 30px;
+}
+.menu--link:hover{
+    color:aqua;
 }
 .menu--pesquisa{
     width: 274px;
@@ -109,12 +111,19 @@ button{
 
 main{
     clear: both;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    height: 560px;
 }
-
+aside{
+    margin-top:65px;
+}
 h2{
     font-style: normal;
     font-weight: 300;
     font-size: 48px;
+    margin: 40px 0 27px 0;
+    text-align: center;
 }
 .reportagem--texto{
     font-style: normal;
@@ -126,25 +135,37 @@ h3{
     font-style: normal;
     font-weight: 300;
     font-size: 36px;
+    margin-bottom: 13px;
 }
 .box-reportagem{
     width: 387px;
     height: 160px;
+    float: left;
+    margin-right: 9px;
+}
+.box-reportagem:last-child{
+    margin-right: 0px;
 }
 .box-reportagem img{
     float: left;
+    margin-right: 8px;
 }
 .box-reportagem a{
     text-decoration: none;
     color: #000000;
+    margin-top: 3px;
 }
 .box-reportagem h4{
     font-weight: bold;
     font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 24px;
 }
 .box-reportagem span{
     font-weight: normal;
     font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
 }
 .box-reportagem p{
     font-weight: normal;
@@ -154,10 +175,12 @@ h3{
 footer{
     height: 270px;
     background-color: #414141;
+    clear:both;
+    padding: 49px 50px;
+    border-top: 5px solid #FF5F8F;
 }
 .menu--rodape{
     height: 149px;
-    border-top: 5px solid #FF5F8F;
 }
 .menu--rodape a{
     font-family: 'Roboto', sans-serif;
@@ -167,10 +190,47 @@ footer{
     color:#FFF;
     text-decoration: none;
 }
-
+footer{
+    margin-top: 32px;
+    height: 270px;
+}
 footer span{
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     color:#FFF;
+}
+
+/*
+:hover
+:active
+:disabled
+:last-child
+:first-child
+:nth-child(n)
+*/
+
+/*
+::after
+::before
+*/
+
+/*EXEMPLO DE USO DE MEDIA QUERY*/
+@media only screen and (max-width: 600px){
+    body{
+        background-color: blueviolet;
+    }
+
+    .menu--rodape a{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    body{
+        background-color:chocolate;
+    }
+    .menu--rodape a{
+        font-size: 8px;
+    }
 }
