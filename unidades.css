@@ -1,0 +1,35 @@
+/*
+%
+vw - largura da viewport + width
+vh - altura da viewport + height
+
+vmin = mínimo da viewport
+vmax = máximo da viewport
+
+EM 
+
+REM
+*/
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-size: 14px;
+}
+
+.parent-box{
+    height: 50vh;
+    width: 50vw;
+    background-color: violet;
+    font-size: 1.2rem;
+    color: black;
+}
+.child-box{
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+    font-size: 1.2rem;
+    color: black;
+}
