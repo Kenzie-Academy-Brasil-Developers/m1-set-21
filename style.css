@@ -64,15 +64,21 @@ h1{
     background-color: #525252;
     padding: 0 30px;
 }
+.menu-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
 
-.menu--item{
+/*.menu--item{
     float: left;
     padding: 18px 0;
 }
 .menu--itemPesquisa{
     float: right;
     padding: 9px 0;
-}
+}*/
 
 .menu--link{
     font-family: 'Roboto', sans-serif;
@@ -137,14 +143,12 @@ h3{
     font-size: 36px;
     margin-bottom: 13px;
 }
+aside{
+    display: flex;
+}
 .box-reportagem{
     width: 387px;
     height: 160px;
-    float: left;
-    margin-right: 9px;
-}
-.box-reportagem:last-child{
-    margin-right: 0px;
 }
 .box-reportagem img{
     float: left;
