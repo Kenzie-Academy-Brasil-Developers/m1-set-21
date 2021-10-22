@@ -169,3 +169,13 @@ for(let i = 0; i < numeros.length; i++){
         console.log("Impar:" + numeros[i]);
     }
 }
+
+//array multidimensional
+const pessoas = [
+    ["Isabella", 27],
+    ["Amanda", 21],
+    ["Andre", 21],
+    ["Nicole", 21]
+]
+console.log(pessoas);
+console.log(pessoas[1][0]);
