@@ -1,40 +1,36 @@
-//Uma loja precisa calcular o desconto de 20% em cima de todos os produtos
-//que estão em promoção, o Gerente não sabe quantos produtos serão,
-//ele precisa que esse calculo seja rápido e possível de reutilizar
+const produtos = [
+    ["feijão",   "05/11/2021", "R$4,99"],
+    ["arroz",    "15/11/2021", "R$6,15"],
+    ["macarrão", "05/11/2021", "R$3,28"],
+    ["azeite",   "15/10/2022", "R$23,05"],
+    ["bolacha",  "04/11/2021", "R$3,25"]
+];
 
-// 1 - Criar uma função que calcule o desconto de 20%
-// A função irá receber o valor do produto para calcular
-// 10% - 10/100 => 20% - 20/100 - 0.20
-// Pra descobrir o valor de desconto: pego o valor original e multiplico por 0.20
-// valorOriginal * 0.20 = valor a ser descontado
-// Com o valorDescontado, faço uma subtração do valorOriginal
+function minDescount(oldValue){
+    let price = parseFloat(oldValue.substr(2).replace(',','.'));
+    let discount = price * 0.15;
+    discount = price - discount;
+    discount = discount.toFixed(2);
 
-// 2 - Criar uma função que recebe o valor sem desconto e o nome do produto
-// 3 - Chamar a função de desconto pra saber o novo valor do produto
+    let newPrice = discount.toString().replace('.', ',');
 
-
-const lista = [];
-const listaProduto = [30,45,65,15,88,105];
-
-//função de desconto
-function desconto(valueOriginal){
-    let valorDescontado = valueOriginal * 0.20;
-    let novoValor = valueOriginal - valorDescontado;
-
-    return novoValor;
+    return "R$" + newPrice;
 }
 
-function produtos(produto, valor){
-    let valorDesconto = desconto(valor);
+function newList(oldList){
+    let valuePrice;
+    const newList = [];
 
-    lista.push(valorDesconto);
-    console.log(lista);
+    for(let product = 0; product < oldList.length; product++){
+        if(oldList[product][1] <= "05/11/2021"){
+            valuePrice = minDescount(oldList[product][2]);
 
-    console.log(produto + ": " + valorDesconto);
-
-    return valorDesconto;
+            newList.push([oldList[product][0],oldList[product][1],valuePrice]);
+        }else{
+            newList.push(oldList[product]);
+        }
+    }
+    return newList;
 }
 
-produtos("espelho", 50);
-produtos("pente", 15);
-produtos("boneca", 65);
+newList(produtos);
