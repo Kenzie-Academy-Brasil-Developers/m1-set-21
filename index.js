@@ -29,6 +29,38 @@ function criarItem(){
     allList.appendChild(itemLista);
 
     toDoLista.push(nameValue);
+    console.log(toDoLista);
 }
 
+//CHECKED
+function checked(event){
+    const checkElement = event.target;
+
+    if(checkElement.tagName === "INPUT"){
+        checkElement.parentNode.classList.toggle("feito");
+    }
+}
+
+//EXCLUIR
+function identificaItem(event){
+    const span = event.target;
+
+    if(span.tagName === "SPAN"){
+        removeItem(span);
+    }
+
+}
+
+function removeItem(span){
+    span.parentElement.remove();
+
+    //DESAFIO => retirar o mesmo elemento que foi removido do array
+}
+
+
+//eventos
 buttonAdd.addEventListener('click', criarItem);
+
+allList.addEventListener('click', checked);
+
+allList.addEventListener('click', identificaItem);

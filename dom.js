@@ -23,7 +23,7 @@ const firstElement = document.querySelector('.buttons');
 console.log(firstElement);
 
 // { ....... }
-
+//event || e
 starting.addEventListener('click', function(e) {
     //executo alguma coisa    
     chamafunction();
